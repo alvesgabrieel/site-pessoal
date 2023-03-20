@@ -3,6 +3,8 @@ import React from 'react';
 import { BsArrowUpRight } from 'react-icons/bs';
 // motion 
 import { motion } from 'framer-motion';
+// link
+import { Link } from 'react-scroll';
 //variants
 import { fadeIn } from '../variants'
 
@@ -63,12 +65,13 @@ const Services = () => {
             <h3 className='h3 max-w-[455px] mb-16'>
               Sou um programador WEB freelancer capaz de te oferecer:
             </h3>
+          <Link to='work' activeClass='active' smooth={true} spy={true}>
             <button className='btn btn-sm'>Veja meu trabalho</button>
+          </Link>          
           </motion.div>
           {/* services */}
           <motion.div variants={fadeIn('left', 0.5)} initial='hidden' whileInView={'show'} viewport={{ onde:false, amout: 0.3 }} className='flex-1'>
           {/* services list */}
-
             <div>
               { serviceList }
             </div>

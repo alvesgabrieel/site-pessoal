@@ -10,6 +10,11 @@ import Img2 from '../assets/portfolio-img2.png';
 import Img3 from '../assets/portfolio-img3.png';
 
 const Work = () => {
+  //open link w/ button
+  const link = () => {
+    return window.open("https://github.com/alvesgabrieel", "_blank")
+  }
+
   return (
     <section className='section' id='work' >
 
@@ -22,13 +27,16 @@ const Work = () => {
             {/* text */}
             <div>
               <h2 className='h2 leading-tight text-accent'>
-                Meu ultimo <br />
-                Trabalho
+                Alguns<br />
+                Projetos
               </h2>
               <p className='max-w-sm mb-16'>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. At consequuntur dicta necessitatibus natus! Iste quisquam exercitationem 
-              </p>
-              <button className='btn btn-sm'>Ver todos os projetos</button>
+                Alguns projetos feitos por mim e um pouco sobre eles, para ver todos os projetos é só acessar meu Github, clicando no botão abaixo:
+              </p>              
+
+                <button className='btn btn-sm' onClick={link}>
+                Ver todos os projetos no Github
+                </button>                           
             </div>
 
             {/* image */}
@@ -36,19 +44,22 @@ const Work = () => {
               {/* overlay */}
               <div className='group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300'></div>
               {/* img */}
-              <img className='group-hover:scale-125 transition-all duration-500' src={Img1} alt="" />
+              <img className='group-hover:scale-125 transition-all duration-500' src={Img1} alt="projeto clone pagina vingadores" />
               {/* pretitle */}
               <div className='absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50'>
-                <span className='text-gradient'>UI/UX design</span>
+                <span className='text-gradient'>
+                  <a href="https://disney-plus-pagina-vingadores.vercel.app/" target="_blank">Clone Vingadores - Ultimato</a> 
+                </span>
               </div>
               {/* title */}
               <div className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50'>
-                <span className='text-3x1 text-white'>Project title</span>                
+                <span className='text-3x1 text-white'>w/ HTML, SASS, JS PURO</span>                
               </div>
-            </div>            
+            </div> 
+
           </motion.div>
 
-          <motion.div className='flex-1 flex flex-col gap-y-10' variants={fadeIn('left', 0.2)} initial='hidden' whileInView={'show'} viewport={{ once: false, amount: 0.3 }}>
+          <motion.div className='flex-1 flex flex-col gap-y-10 mt-[-14px]' variants={fadeIn('left', 0.2)} initial='hidden' whileInView={'show'} viewport={{ once: false, amount: 0.3 }}>
             {/* image */}
             <div className='group relative overflow-hidden border-2 border-white/50 rounded-xl'>
               {/* overlay */}
@@ -57,11 +68,11 @@ const Work = () => {
               <img className='group-hover:scale-125 transition-all duration-500' src={Img2} alt="" />
               {/* pretitle */}
               <div className='absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50'>
-                <span className='text-gradient'>UI/UX design</span>
+                <a href="https://clone-disneyplus-streaming-1rm80gpux-alvesgabrieel.vercel.app/" target="_blank"><span className='text-gradient'>Clone Landing page Streaming Disney+</span></a>                
               </div>
               {/* title */}
               <div className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50'>
-                <span className='text-3x1 text-white'>Project title</span>                
+                <span className='text-3x1 text-white'>w/ HTML, SASS, JS PURO</span>                
               </div>
             </div>
 
@@ -73,11 +84,11 @@ const Work = () => {
               <img className='group-hover:scale-125 transition-all duration-500' src={Img3} alt="" />
               {/* pretitle */}
               <div className='absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50'>
-                <span className='text-gradient'>UI/UX design</span>
+                <a href="https://landing-page-evento.vercel.app/" target="_blank"><span className='text-gradient'>Landing Page Evento de tecnologia</span></a>                
               </div>
               {/* title */}
               <div className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50'>
-                <span className='text-3x1 text-white'>Project title</span>                
+                <span className='text-3x1 text-white'>w/ HTML, SASS, JS PURO</span>                
               </div>
             </div>
           </motion.div>

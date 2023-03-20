@@ -9,6 +9,8 @@ import { TypeAnimation } from 'react-type-animation';
 import { motion } from 'framer-motion';
 //variants
 import { fadeIn } from '../variants';
+// link
+import { Link } from 'react-scroll';
 //css banner
 import '../index.css';
  
@@ -41,8 +43,12 @@ const Banner = () => {
             Atualmente meu foco é no Desenvolvimento Web Front-end, especificamente direcionado ao desenvolvimento de interfaces SPA (Single Page Application) responsivas (desktop, tablet, mobile), tendo como meta tornar-me Fullstack. 
             </motion.p>
             <motion.div variants={fadeIn('up', 0.7)} initial='hidden' whileInView={'show'} viewport={{ onde: false, amount: 0.7 }} className='flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0'>
-              <button className='btn btn-lg'>Contate-me</button>
-              <a href="#" className='text-gradient btn-link ml-2'>Projetos</a>
+              <Link to='contact' activeClass='active' smooth={true} spy={true}>
+                <button className='btn btn-lg'>Contate-me</button>
+              </Link>
+              <Link to='work' activeClass='active' smooth={true} spy={true}>
+                <a href="#" className='text-gradient btn-link ml-2'>Projetos</a>
+              </Link>              
             </motion.div>
             { /* socials */}
             <motion.div variants={fadeIn('up', 0.7)} initial='hidden' whileInView={'show'} viewport={{ onde: false, amount: 0.7 }} className='flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0'>
