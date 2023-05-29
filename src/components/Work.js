@@ -62,14 +62,14 @@ const Work = () => {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    Clone Vingadores - Ultimato
+                    Preenchimento de forms dinamico - dados do cartao
                   </a>
                 </span>
               </div>
               {/* title */}
               <div className="absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50">
                 <span className="text-3x1 text-white">
-                  w/ HTML, SASS, JS PURO
+                  w/ React, Styled-Components e pacote "React-input-mask(npm)"
                 </span>
               </div>
             </div>

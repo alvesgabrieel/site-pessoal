@@ -47,12 +47,12 @@ const About = () => {
               <li>- JavaScript/TypeScript;</li>
               <li>
                 - Biblioteca e Framworks: React.js, Vue.js, JQuery, Bootstrap,
-                Tailwind, Next.js;
+                Tailwind;
               </li>
               <li>-Comunicação de dados (API’s, json)</li>
               <li>-Gerenciamento de Estados (Redux-react/Arquitetura FLUX).</li>
             </ul>
-            <p>
+            <p className="mb-2">
               Programação orientada a objetos (POO), Clean Code, NodeJs, npm,
               bundlers e Git/Github também fazem parte das minhas Hardskills.
             </p>
@@ -60,7 +60,7 @@ const About = () => {
             <div className="flex gap-x-6 lg:gap-x-10 mb-12">
               <div>
                 <div className="text-[40px] font-tertiary text-gradient mb-2">
-                  {inView ? <CountUp start={0} end={1} duration={3} /> : null}+
+                  {inView ? <CountUp start={0} end={2} duration={3} /> : null}+
                 </div>
 
                 <div className="font-primary text-sm tracking-[2px]">

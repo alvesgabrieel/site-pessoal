@@ -55,9 +55,9 @@ const Banner = () => {
               viewport={{ onde: false, amount: 0.7 }}
               className="mb-8 max-wid-lg mx-auto lg:mx-0"
             >
-              Atualmente meu foco é no Desenvolvimento Web Front-end,
-              desenvolvendo aplicações web responsivas com as tecnologias mais
-              atualizadas do mercado, tendo como meta tornar-me Fullstack.
+              Estudante de Engenharia de Software, especialista em
+              Desenvolvimento Web Front-end, desenvolvendo aplicações web
+              responsivas com as tecnologias mais atualizadas do mercado.
             </motion.p>
             <motion.div
               variants={fadeIn("up", 0.7)}
