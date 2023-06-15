@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 //imgs
 import Image from "../assets/banner.png";
@@ -97,7 +98,11 @@ const Banner = () => {
               >
                 <FaLinkedin />
               </a>
-              <a href="#">
+              <a
+                href="https://www.instagram.com/programmador.js/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <FaInstagram />
               </a>
             </motion.div>
