@@ -129,12 +129,14 @@ const Work = () => {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <span className="text-gradient">Website WEEKAWAY</span>
+                  <span className="text-gradient">Ecommerce Eplay</span>
                 </a>
               </div>
               {/* title */}
               <div className="absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50">
-                <span className="text-3x1 text-white">w/ REACT, TAILWIND</span>
+                <span className="text-3x1 text-white">
+                  w/ REACT, TYPESCRIPT, REDUX, API
+                </span>
               </div>
             </div>
           </motion.div>
