@@ -125,7 +125,7 @@ const Work = () => {
               {/* pretitle */}
               <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50">
                 <a
-                  href="https://weekaway-gaqm.vercel.app/"
+                  href="https://e-play-e-commerce.vercel.app/?vercelToolbarCode=f-jlnoMqJ5VawqM"
                   target="_blank"
                   rel="noreferrer"
                 >
